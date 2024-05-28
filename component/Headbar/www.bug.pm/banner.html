@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>crossblog的banner样式仿写</title>
+    <style>
+        .body {
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            /* background-color: burlywood */
+        }
+        .page-header {
+            height: 80px;
+            /* background-color: burlywood; */
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .page-header .container {
+            display: flex;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: azure;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .logo a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .logo a img{
+            width: 100%;
+            height: 100%;
+        }
+        .header-nav {
+            width: 705px;
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .name {
+            font-weight: bold;
+            height: 40px;
+            font-size: 24px;
+            line-height: 40px;
+            margin: 0;
+        }
+        .nav-bar {
+            height: 40px;
+            margin: 0;
+            padding:0px;
+            display: flex;
+        }
+        .nav-bar li {
+            list-style-type: none;
+        }
+        .nav-bar li a {
+            font-size: 16px;
+            padding: 0 18px;
+            margin-top: 10px;
+            display: inline-block;
+            color: #2bbc8a;
+            border-right: 1px dashed currentColor;
+            text-decoration: none;
+        }
+        .nav-bar li:first-child a {
+            padding-left: 0;
+        }
+        .nav-bar li:last-child a{
+            padding-right: 0;
+            border-right: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="page-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="/images/Head-Portraits .png"></a>
+            </div>
+            <div class="header-nav">
+                <p class="name">Qiyu's blog</p>
+                <ul class="nav-bar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Writting</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
