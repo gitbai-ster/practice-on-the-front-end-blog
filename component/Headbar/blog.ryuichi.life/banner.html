@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>ryuichi的主页banner仿写</title>
+    <link rel="stylesheet" href="/reset.css">
+    <style>
+        @import url('https://fonts.font.im/css?family=Abril+Fatface');
+        * {
+            background-color: black;
+            font-family: "思源黑体",sans-serif;
+            color: white;
+        }
+        .whiteborder {
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1000px;
+            height: 1000px;
+            margin: 0 auto;
+            margin-top: 50px;
+            display: flex;
+        }
+        .main-header {
+            width: 10%;
+            height: 80vh;
+            order: 1;
+            position:sticky;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content {
+            width: 90%;
+            height: 100%;
+            order: 0;
+        }
+        .main-header .title {
+            flex: 1 0 auto;
+            font-family: 'Abril Fatface', sans-serif;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 5px;
+            writing-mode: vertical-rl;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            border-left: 2px solid white;
+            transition: .3s ease all;
+        }
+        .main-header .title h1 {
+            font-size: 40px;
+            font-family: inherit;
+            transition: .3s ease all;
+        }
+        .main-header .title h3 {
+            font-size: 25px;
+            font-family: inherit;
+            transition: .3s ease all;
+        }
+        .main-header .title:hover {
+            background-color: white;
+            color: #000;
+        }
+        .main-header .title:hover h1,
+        .main-header .title:hover h3 {
+            transform: translateY(10px);
+            background-color: #00000000;
+            color: #000;
+        }
+        .main-header .header-nav{
+            flex: 0 1 auto;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .header-nav li {
+            margin-bottom: 5px
+        }
+        .header-nav li a{
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 3px solid white;
+            transition: color .3s ease 0s, background-color .3s ease 0s;
+        }
+        .header-nav li a:hover{
+            background-color: white;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-header">
+            <div class="title">
+                <h1>Qiyu's Blog</h1>
+                <h3>A pure land in the heart</h3>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">Catagories</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">内容区</div>
+    </div>
+</body>
+</html>
